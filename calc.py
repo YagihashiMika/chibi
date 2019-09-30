@@ -1,4 +1,4 @@
-def calc(s):
-    return s
+def calc(a, b):
+    return a + b
 
-print(calc('1'))
+print(calc(1, 2))
