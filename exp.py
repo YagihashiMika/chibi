@@ -1,6 +1,16 @@
 class Expr(object):
     pass
 
+class Binary(Expr):
+    __slots__ = ['left', 'right']
+    def __init__(self, a, b):
+        self.left = toExpr(a)
+        self.right = toExpr(b)
+    def __repr__(self):
+        classname = self.__class__.__name__
+        return f'{classname}({self.left},{self.right})'
+
+
 class Val(Expr):
     __slots__ = ['value']
     def __init__(self, value = 0):
