@@ -8,5 +8,3 @@ Prod = { Value '*' Expr #Mul } / Value
 
 Value = { DIGIT+ #Int } / '(' Expr ')'
 DIGIT = [0-9]
-
-
